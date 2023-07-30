@@ -10,20 +10,21 @@ const Computers = ({ isMobile }) => {
 
   return (
     <mesh>
-      <hemisphereLight intensity={0.15} groundColor='black' />
+      <hemisphereLight intensity={2.3} groundColor='black' />
       <pointLight intensity={1} />
       <spotLight
         position={[-20, 50, 10]}
+        
         angle={0.12}
         penumbra={1}
-        intensity={1}
+        intensity={10}
         castShadow
-        shadow-mapSize={1024}
+        shadow-mapSize={1080}
       />
       <primitive 
         object={computer.scene}
-        scale={isMobile ? 0.60 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
+        scale={isMobile ? 0.4 : 0.70}
+        position={isMobile ? [0, -2, -0.8] : [0, -3.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]} 
       />
     </mesh>
@@ -32,12 +33,12 @@ const Computers = ({ isMobile }) => {
 
 const ComputersCanvas = () => {
 
-  const [isMobile, setIsMobile] = useState(false)
+  const [isMobile, setIsMobile] = useState(window.matchMedia("(max-width: 700px)").matches)
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 700px)")
 
-    setIsMobile(mediaQuery)
+    console.log(mediaQuery)
 
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches)
@@ -50,6 +51,7 @@ const ComputersCanvas = () => {
     }
 
   }, [])
+  console.log(isMobile)
 
   return(
     <Canvas
@@ -61,6 +63,7 @@ const ComputersCanvas = () => {
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls 
           enableZoom={false}
+          enablePan={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
