@@ -24,7 +24,10 @@ import {
     tripguide,
     threejs,
   } from "../assets";
-  
+  import  servers from '../assets/servers.png'
+  import  networks from '../assets/networks.png'
+  import  coding from '../assets/coding.png'
+
   export const navLinks = [
     {
       id: "about",
@@ -42,20 +45,20 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
-      icon: web,
+      title: "Server Admin",
+      icon: servers,
     },
     {
-      title: "React Native Developer",
-      icon: mobile,
+      title: "Network Specialist",
+      icon: networks,
     },
     {
-      title: "Backend Developer",
+      title: "Python Coder",
+      icon: coding,
+    },
+    {
+      title: "Backend SQL",
       icon: backend,
-    },
-    {
-      title: "Content Creator",
-      icon: creator,
     },
   ];
   
