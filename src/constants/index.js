@@ -151,26 +151,26 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
+        "He's so fucking bad.",
+      name: "Valorant teammate",
+      designation: "player",
+      company: "Valorant",
       image: "https://randomuser.me/api/portraits/women/4.jpg",
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
+        "First i thoght He's braindead but playing more and more with him i Found out that he's retarded.",
+      name: "Some guy",
+      designation: "worker",
+      company: "frienship",
       image: "https://randomuser.me/api/portraits/men/5.jpg",
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
+        "He's my brother what can i say he's a team player as he say's in his resume",
+      name: "djalil",
+      designation: "CEO",
+      company: "lmanzil",
       image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];
